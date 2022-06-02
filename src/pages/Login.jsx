@@ -2,6 +2,7 @@ import { FormControl, TextField } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -43,7 +44,7 @@ const Login = () => {
           />
           <TextField
             label="Password"
-            type={"search"}
+            type={"password"}
             id="passwordInp"
             placeholder="Password"
             value={password}
@@ -52,6 +53,7 @@ const Login = () => {
           />
         </FormControl>
         <button onClick={handleSubmit}>Valider</button>
+        <div className="already-container">Pas de compte ? <Link to="/register">S'inscrire</Link></div>
       </div>
     </div>
   );

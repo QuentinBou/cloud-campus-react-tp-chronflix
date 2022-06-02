@@ -9,6 +9,7 @@ import AddChronique from './pages/AddChronique'
 import Navbar from './components/home/navbar'
 import ChroniqueResume from './pages/ChroniqueResume'
 import Login from './pages/Login'
+import Register from './pages/Register'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
                 <Route path="/profil"  element={ <Profil />} />
                 <Route path="/add"  element={ <AddChronique />} />
                 <Route path='/login' element={<Login />} />
+                <Route path='/register' element={<Register />} />
             </Routes>
 
           </div>

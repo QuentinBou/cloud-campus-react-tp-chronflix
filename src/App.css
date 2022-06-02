@@ -123,6 +123,12 @@ code {
 .profile-poste {
   cursor: pointer;
   width: 30%;
+  position: relative;
+}
+.poste-title i {
+  position: absolute;
+  top: 8%;
+  right: 4%;
 }
 
 .poste-title {
@@ -192,9 +198,19 @@ code {
 .posteContent {
   border: 1px solid black;
   width: 730px;
-  height: 150px;
+  min-height: 30vh;
   margin-left: 350px;
   padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.posteContent textarea {
+  font-size: 1rem;
+  padding: 10px;
+  min-height: 25vh;
 }
 
 .AddChronique {
@@ -288,7 +304,7 @@ form > div {
   gap: 1rem;
   font-size: 1.3rem;
 }
-.login-page {
+.login-page, .register-page {
   width: 100%;
   min-height: 90vh;
   display: flex;
@@ -296,7 +312,7 @@ form > div {
   justify-content: center;
 }
 
-.login-container {
+.login-container, .register-container {
   width: 50%;
   background: rgba(193, 193, 193, 0.82);
   border-radius: 16px;
@@ -311,24 +327,45 @@ form > div {
   justify-content: space-around;
   padding: 2rem;
 }
-.login-container h2 {
+.login-container h2, .register-container h2 {
   font-size: 3.2rem;
   color: white;
 }
-.login-container button {
+.login-container button, .register-container button {
   border: none;
   padding: 10px;
   border-radius: 10px;
   font-size: 1.3rem;
+  cursor: pointer;
 }
-.form-login {
+.form-login, .form-register {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  width: 60%;
+  width: 80%;
 }
-.form-login div {
+.form-login div, .form-register div {
   width: 100%;
 }
-
+.posteContent button {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
