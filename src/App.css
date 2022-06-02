@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #c8ad7f;
+  font-family: "Roboto Slab";
+}
+
+.navbar h1 {
+  margin-left: 20px;
+}
+
+.navbar .liens {
+  margin-left: auto;
+  margin-right: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar a, .navbar p {
+  text-decoration: none;
+  margin-left: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar a:hover, .navbar p:hover {
+  color: whitesmoke;
+}
+
+.navbar img {
+  height: 50px;
+  margin: 10px;
+}
+
+.carousels {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 50px;
+}
+.carousels-content {
+  margin-left: 10px;
+  height: 400px;
+  width: 500px;
+}
+
+.carousels-img {
+  width: 500px;
+  height: 300px;
+}
+
+.home-text {
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+  text-size-adjust: 16px;
+  font-weight: 600;
+  color: black;
+}
+.apropos {
+  padding: 0 50px 0 50px;
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutUs {
+  margin: 0 100px 0 100px;
+  text-align: center;
+}
+
+.poste,
+.profile-poste {
+  width: 30%;
+  height: auto;
+  margin-left: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.316);
+  padding: 5px;
+}
+.profil-all-poste {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 1rem;
+  width: 60%;
+  margin-bottom: 2rem;
+  flex-wrap: nowrap !important;
+  overflow-x: auto;
+}
+.poste {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.profile-poste {
+  cursor: pointer;
+  width: 30%;
+}
+
+.poste-title {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.poste-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.poste-title h4 {
+  margin-left: 10px;
+}
+
+.poste-content {
+  padding: 10px;
+  text-align: justify;
+}
+
+.chroniques {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.lastPost {
+  display: flex;
+  justify-content: space-around;
+}
+
+.AllPost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.profile-container {
+  padding: 50px;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile-row > div h3 {
+  width: 100%;
+  text-align: center;
+}
+.profile-row img {
+  border-radius: 100%;
+}
+
+.posteContent {
+  border: 1px solid black;
+  width: 730px;
+  height: 150px;
+  margin-left: 350px;
+  padding: 5px;
+}
+
+.AddChronique {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddChroniqueForm {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input-title,
+.input-poste {
+  width: 100%;
+}
+
+.input-title {
+  height: 30px;
+}
+
+.input-poste {
+  height: 100px;
+}
+
+form > div {
+  width: 100%;
+  margin: 10px;
+}
+
+.btn-submit {
+  padding: 10px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: darkblue;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.resume-page {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.resume-card {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: rgba(200, 173, 127, 0.82);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(200, 173, 127, 0.3);
+}
+.resume-card p {
+  color: white;
+  font-size: 1.3rem;
+  text-align: justify;
+  letter-spacing: 0.04em;
+}
+.resume-card h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.resume-card .content-det {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.login-page {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 50%;
+  background: rgba(193, 193, 193, 0.82);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(193, 193, 193, 0.3);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.login-container h2 {
+  font-size: 3.2rem;
+  color: white;
+}
+.login-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+}
+.form-login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 60%;
+}
+.form-login div {
+  width: 100%;
+}
+
